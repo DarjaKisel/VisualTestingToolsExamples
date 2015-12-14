@@ -1,0 +1,61 @@
+
+@objects
+    footer                #site-footer
+    navigation            .footer-first-column
+    info                  .footer-secound-column
+    partners              .footer-third-column
+
+=Footer=
+
+    @on *
+        footer:
+            centered horizontally inside screen
+            inside partly screen ~0px bottom
+            below carousel 0px
+
+    @on desktop
+        footer:
+            height ~570px
+
+    @on laptop
+        footer:
+            height ~610px
+
+    @on tablet
+        footer:
+            height ~950px
+
+    @on mobile
+        footer:
+            height ~1150px
+
+=All the related footer components=
+
+    @on desktop, laptop
+        navigation:
+            inside footer 0px left
+            left-of info ~0px
+
+        info:
+            centered horizontally inside footer
+            left-of partners ~0px
+            right-of navigation ~0px
+
+        partners:
+            inside footer ~0px right
+            right-of info ~0px
+
+    @on tablet, mobile
+        navigation:
+            aligned vertically all footer
+            inside footer 60px top
+            above info ~0px
+
+        info:
+            aligned vertically all footer
+            above partners ~0px
+            below navigation ~0px
+
+        partners:
+            aligned vertically all footer
+            below info ~0px

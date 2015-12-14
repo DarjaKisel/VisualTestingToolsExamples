@@ -1,0 +1,14 @@
+
+@@ set domain comaqa.by
+
+@@ table myDevices
+    | deviceName | size     | tags   |
+    | mobile     | 320x600  | mobile |
+    | tablet     | 768x1080 | tablet |
+    | laptop     | 1210x768 | laptop |
+    | desktop    | 1960x1024| desktop|
+
+@@ parameterized using myDevices
+Main comaQA page on ${deviceName}
+    http://${domain}/  ${size}
+        check mainPage.gspec --include "${tags}"

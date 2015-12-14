@@ -1,0 +1,45 @@
+
+@objects
+    newsPreview          css    .entry-media
+    newsText             css    .entry-body
+    readMore             css    .entry-read-more-link
+    newsHeader           css    .entry-header
+    newsDateTime         css    .entry-meta
+
+
+
+
+=One Particular News Item component=
+
+    @on *
+        newsPreview:
+            inside parent ~0px top
+            inside parent ~0px left right
+            aligned vertically all parent
+            above newsHeader ~0px
+    
+        newsText:
+            aligned vertically all parent
+            inside parent ~0px left right
+            below newsHeader ~0px
+    
+        readMore:
+            inside newsText 30px left bottom
+            width 115 to 120px
+            height 30px
+            text is "Read more..."
+    
+        newsHeader:
+            below newsPreview ~0px
+            above newsText ~0px
+            inside parent ~0px left right
+            aligned vertically all parent
+    
+        newsDateTime:
+            centered horizontally inside parent
+            inside parent 30px left right
+
+    @on desktop, laptop, tablet
+        newsDateTime:
+            height = 30px
+

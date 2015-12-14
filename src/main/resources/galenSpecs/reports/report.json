@@ -1,0 +1,17 @@
+{
+  "tests" : [ {
+    "name" : "firstBlogPost.gspec",
+    "startedAt" : 1443776937630,
+    "endedAt" : 1443776961564,
+    "failed" : false,
+    "statistic" : {
+      "passed" : 1,
+      "errors" : 0,
+      "warnings" : 0,
+      "total" : 1
+    },
+    "testId" : "1-firstblogpost.gspec",
+    "failed" : false,
+    "duration" : 23934
+  } ]
+}

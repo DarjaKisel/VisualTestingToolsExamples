@@ -1,0 +1,15 @@
+Main page on a small mobile device
+    https://comaqa.by/     320x600
+        check   mainPage.gspec --include "mobile, all" --exclude "desktop, laptop, tablet"
+
+Main page on a tablet device
+    https://comaqa.by/     750x1024
+        check   mainPage.gspec --include "tablet, all" --exclude "desktop, laptop, mobile"
+
+Main page on a laptop device
+    https://comaqa.by/     1210x768
+        check   mainPage.gspec --include "laptop, all" --exclude "desktop, tablet, mobile"
+
+Main page on a desktop device
+    https://comaqa.by/     1600x900
+        check   mainPage.gspec --include "desktop, all" --exclude "laptop, tablet, mobile"

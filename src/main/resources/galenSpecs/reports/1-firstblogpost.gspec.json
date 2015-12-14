@@ -1,0 +1,46 @@
+{
+  "testId" : "1-firstblogpost.gspec",
+  "name" : "firstBlogPost.gspec",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Simple check",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "check  firstBlogPost.gspec --url https://comaqa.by/2015/09/29/cee-secr/ --size 1600x900 --include desktop --htmlreport reports",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: firstBlogPost.gspec included tags: desktop",
+          "status" : "info",
+          "time" : 1443776960267,
+          "includedTags" : [ "desktop" ],
+          "sections" : [ {
+            "name" : "Share Links",
+            "objects" : [ {
+              "name" : "shareLinks",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "firstBlogPost.gspec",
+                  "lineNumber" : 8
+                },
+                "name" : "image file sharelinks.png, error 5%, tolerance 80",
+                "highlight" : [ "shareLinks" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "shareLinks" : {
+              "area" : [ 225, 2333, 720, 60 ]
+            }
+          },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1443776956016,
+        "type" : "node"
+      } ],
+      "time" : 1443776937633,
+      "type" : "node"
+    } ]
+  }
+}
